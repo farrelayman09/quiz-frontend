@@ -63,6 +63,7 @@
               <v-card-title class="text-h5">{{ tryout.title }}</v-card-title>
               <v-card-subtitle>{{ tryout.category }}</v-card-subtitle>
               <v-card-subtitle>created at: {{ new Date(tryout.createdAt).toLocaleDateString() }}</v-card-subtitle>
+              <v-card-subtitle>creator: {{ tryout.creator }}</v-card-subtitle>
               <v-card-actions>
                 <v-btn text="Do tryout" @click="doTryout(tryout._id)" variant="tonal"></v-btn>
               </v-card-actions>
